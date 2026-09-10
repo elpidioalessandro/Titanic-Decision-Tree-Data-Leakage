@@ -22,9 +22,9 @@ Predicting whether a passenger survived the Titanic disaster from their characte
 
 ## The data leakage
 
-The first version imputed missing values and encoded categories on the **entire dataset before splitting**, letting information from the test setleak into training. It scored 80.3% and looked correct.
+The first version imputed missing values and encoded categories on the **entire dataset before splitting**, letting information from the test set leak into training. It scored 80.3% and looked correct.
 
-Rebuilt with all preprocessing learned **only from the training data** inside a pipeline — making leakage impossible by design — the honestaccuracy dropped to 77.1%. The lower number is the real one.
+Rebuilt with all preprocessing learned **only from the training data** inside a pipeline — making leakage impossible by design, the honest accuracy dropped to 77.1%. The lower number is the real one.
 
 ## Results
 
@@ -42,8 +42,8 @@ Python · pandas · scikit-learn · matplotlib
 
 ## Structure
 
-* `ElpidioAlessandroMorettiMLI0.ipynb` — full notebook with code, outputs, and interpretive commentary
-* `titanic_sub.csv` — dataset
+* `ElpidioAlessandroMorettiMLI0.ipynb` : full notebook with code, outputs, and interpretive commentary
+* `titanic_sub.csv` : dataset
 
 ## How to read it
 
